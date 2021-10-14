@@ -1,0 +1,344 @@
+"""                                                                               """
+
+   Para realizar la actividad deberá crear un repositorio propio llamado 
+   "nombre-apellido-test" y enviar el link al grupo de WathsApp para ser evaluado.
+   Genere un commit por punto y pushee el commit a main.
+
+"""                                                                               """
+
+Punto 1: 
+  a- A través de que extension de archivo se genera un script de python. Ejemplifique.
+  b- Definir con sus palabras que es una variable?
+
+a-
+
+b- Una variable es una primera instancia que tiene las condiones para que suceda aquello que se indique y podra ser modificada.
+
+
+
+___________________________________________________________________________________
+
+Punto 2:
+  a- Enumere los tipos de datos primitivos. 
+     Cual es la diferencia entre el tipo Int y Float
+  b- Enumere los tipos de colecciones que conoce. 
+     Cual es la diferencia entre los tipos list y tuple  
+
+a - char, byte, short, int, long, float, double, boolean .
+ La diferencia entre un tipo de dato Int y um Float es que este ultimo sirve para almecenar numeros decimales a diferenias de los tipo de dato Int estos solo abarcan los enteros negativos y positivos .
+
+b- List , Tuplr , Set y Dictionary .
+La diferencia es que la coleccion tipo Tuple es inmutable y el tipo List si es mutable . 
+___________________________________________________________________________________
+
+Punto 3:
+  Las estructuras selectivas nos permiten tomar desiciones logicas, es decir, se evalua 
+  una condición y en función del resultado se realizarán una determinada serie de instruciones.
+  Se puede hacer uso de las palabra reservadas: 
+    1ra. "if" 
+    2da. "if - else" 
+    3ra. "if - elif - else" 
+
+  Sabiendo esto podemos decir que en python simulamos el comportamiento de un switch a traves de 
+  la tercera estructura antes dicha. Cree un script de python llamado punto_3.py con el siguiente 
+  código dentro: 
+
+        # Inicio de mi programa
+        mi_variable = 4
+
+        if mi_variable == 0:
+          print("Ha ingresado a la primera validación.")
+
+        elif mi_variable > 3:
+          print("Ha ingresado a la segunda validación.")
+
+        elif mi_variable > 6:
+          print("Ha ingresado a la tercer validación.")
+
+        else: 
+          print("No hay coincidencias.")
+
+        # Fin del código
+
+   
+   Ejecute el código. 
+    a- Cual y porque es el print que se mustra por consola? 
+    b- Ahora cambie el valor de "mi_variable" 
+
+        mi_variable = 7
+
+    Cual y porque es el print que se muestra por consola? Describa el resultado. 
+    Puede hacer uso del debug.
+
+    a- El print que se muetra en consola es el primer "elif" de la linea 6 y 7
+     es porque mi_variable es mayor a 3 .
+    
+    b - Se muestra la 2da condicon (linea 6 y 7) porque la funcion de un switch es matchear con la primera clase de estructura y salir del sistema . 
+
+
+
+
+
+
+___________________________________________________________________________________
+
+Punto 4: 
+  Los bucles de iteración nos sirven para recorrer las colecciones. 
+  Con sus palabra responda:
+    a- Cuando corta la iteración un bucle "for" ?
+    b- Cuando termina de iterar un bucle "while" ?
+
+    a- Se corta la iteracion de un bucle For se utiliza return .
+
+    b-  Podemos forzar al programa a salir con un break .
+
+  Cree un script llamado: "punto_4.py" 
+    c- Genere un ejemplo del bucle "for" en el cual recorra los elementos de una lista 
+        y los imprima por consola.
+    d- Genere un ejemplo del bucle "while" en el cual se imprima 5 veces la siguiente 
+        frase por consola: "La condición se cumplio." 
+
+    c-Mi_lista = [1,4,7,3,21]
+
+      for x in Mi_lista:
+        print(x)
+
+
+
+  d- 
+valor = int(input('Introduce un número del 1 al 6: '))
+while valor<1 or valor>6:
+    print("El numero tiene que ser entre en 1 y el 6.")
+    valor = int(input('Introduci un número del 1 al 6: '))
+if valor == 1:
+    print('Elejiste el numero uno.')
+elif valor == 2:
+    print('Elejiste el numero dos.')
+elif valor == 3:
+    print('Elejiste el numero tres.')
+elif valor == 4:
+    print('Elejiste el numero cuatro.')
+elif valor == 5:
+    print('Elejiste el numero cinco.')
+elif valor == 6:
+    print('Elejiste el numero seis.')
+
+
+___________________________________________________________________________________
+
+Punto 5: 
+  a- Git es un sistema para el control de versiones de nuestro codigo. Cuales son las 
+    areas que lo componen?
+  b- Con que comando pasa los cambios realizados del "working directory" al "Staging area"
+  c- Con que comando genera un commit?  
+  d- GitHub nos permite alojar los projectos en la nube. Una vez enlazado el proyecto local con
+    el repositorio remoto con que comando empujamos nuestros cambios?
+  e- Si quisieramos traernos los cambios del repositorio remoto que comando usariamos?
+
+
+   a-El directorio de Git (Git directory), el directorio de trabajo (working directory), y el área de preparación (staging area).
+    b- git add 
+    c- git commit -m
+    d- git push origin 
+    e- git pull origin 
+
+
+
+
+
+
+
+
+
+
+
+___________________________________________________________________________________
+
+Punto 6:
+  Las funciones nos permiten modularizar bloques de codigo y aporta a la reutilización 
+  del mismo. 
+  a- Cree un modulo llamado: "punto_6.py" y dentro defina una función "resta" que reciba como 
+    parametro dos numeros y retorne el resultado de dicha operacion matematica. Documente dicha 
+    función para que explique brevemente cual es su objetivo. 
+    Haga uso de la función que acaba de relizar asignando la devolución de la fn a una variable 
+    resultado, y luego imprima dicha variable. 
+
+  b- Las funciones de orden superior reciben como parametro otras funciones. Enumere cuales conoce
+     y describa brevemente para que sirve cada una. 
+
+
+
+
+
+
+
+
+
+
+
+
+___________________________________________________________________________________
+
+Punto 7: 
+  Cree un script llamado: "punto_7.py" 
+  dentro coloque el siguiente codigo:
+
+    # Inicio del programa 
+    def getOne(una_lista):
+      for elemento in una_lista:
+          return elemento
+
+    
+    def getElements(una_lista):
+      for elemento in una_lista:
+          yield elemento
+
+
+    
+    if __name__ == "__main__":
+
+        numeros = [1,2,3,4,5]
+
+        devolución = getOne(numeros)
+
+        print(devolución)
+
+
+        resultado = list(getElements(numeros))
+
+        print(resultado)
+
+    # Fin del programa
+
+
+  Cual es la diferencia entre el return y el yield en un bucle for?
+
+a diferencia del Yield el Return retorna un elemento y corta la ejecución de la fn ademas el yield pausa la ejecución de la función y guarda el estado de la misma hasta que decidas usarla de nuevo y tambien imprime todo  
+
+
+
+
+
+
+
+
+
+
+___________________________________________________________________________________
+
+Punto 8: 
+  Si crea un modulo de python modulo_a.py:
+
+    # Inicio del modulo modulo_a.py
+    def hola():
+        print("Hello world!!!")
+
+
+    if __name__ == "__main__":
+        hola()
+
+    # fin del modulo_a
+
+  Y luego lo importa en el modulo_b.py 
+  Que beneficio le aportaria haber hecho uso de: if __name__ == "__main__":
+  el beneficio que me brinda es que es como una puerta de entrada , ejemplo .
+  si tengo 70 def la funcion main me va a llamar a uno en especifico.
+
+
+
+
+
+
+
+
+
+
+
+___________________________________________________________________________________
+
+Punto 9: 
+  Las excepciones se producen cuando la ejecucion del programa no se ejecuta correctamente.
+  a- Con que palabra reservada se lanza una excepción ?
+  b- Con que sentencia se maneja una excepción?
+
+a- Excepcion:  NameError
+    El interprete arroja una excepción al tratar de acceder a una variable 
+    que no ha sido declarada.
+
+Excepcion:  TypeError
+    El interprete arroja una excepción al tratar de concatenar un string 
+    con un int.
+
+ Excepcion:  ValueError 
+    El interprete arroja una excepción al tratar de castear un string, 
+    y corta la ejecución del programa. Pero podemos manejarla con la 
+    sentencia try except
+
+Excepcion:  ZeroDivisionError
+    El interprete arroja una excepción al tratar de dividir por 0.
+
+
+b-  podemos manejarla con la sentencia try except
+
+
+
+___________________________________________________________________________________
+
+Punto 10:
+
+  Explique con sus palabras para que sirve un decorador? 
+
+es un nombre de un patron de diseño , reduce el codigo comun y repetitivo aparte favorecen la separación de responsabilidades del código
+
+
+
+
+
+
+
+
+
+
+___________________________________________________________________________________
+Punto 11:
+
+   Ejercicio Practico
+
+   a- Crear un programa en el cual el usuario tenga un menu que pueda realizar 
+   las operaciones matematicas basicas (suma, resta, division, multiplicacion). 
+
+    Ejemplo: 
+
+            Menu
+        1- suma
+        2- resta
+        3- division
+        4- multiplicacion
+
+   b- Extender el ejercio anterior, modularizando en funciones cada bloque de codigo 
+      asociado a cada una de las opciones, definir dichas funciones en un archivo 
+      a parte e importalas para hacer uso de ellas. --
+      
+
+   c- Extienda ahora el ejercicio agregando dos opciones al menu: 
+         Menu
+        1- suma
+        2- resta
+        3- division
+        4- multiplicacion
+        5- pares e impares 
+        6- acumulador
+
+      Descripcion: 
+        - pares e impares: debe ingresar 10 numeros por consola e imprimir dos colecciones
+          la coleccion de pares y la coleccion de impares.
+        
+        - acumulador: ingrese 6 numeros por consola los cuales debe validar que sean mayor a 0, 
+          en el caso de que ingresara 0 o un numero negativo debera imprimir el siguiente mensaje:
+
+              "El numero ingresado es menor a 0 vuelva a intentarlo"
+
+    d- Extienda el ejercicio para que ahora la funcion division lance una excepcion en el caso que 
+       el divisor sea 0, luego maneje la excepcion donde este llamando dicha funcion.
+
+___________________________________________________________________________________
